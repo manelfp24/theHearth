@@ -1,0 +1,31 @@
+.titulo-contenedor {
+    font-family: 'Libre Baskerville', serif;
+    color: #CB171A; /* Rojo Intenso */
+    text-transform: uppercase;
+    text-align: center; 
+    margin-top: 25px;
+    line-height: 0.7; 
+    font-weight: 700; 
+}
+
+.titulo-the {
+    display: block; 
+    font-size: 0.7em; 
+    letter-spacing: 0.3em; 
+    margin-bottom: 0.5em; 
+}
+
+.titulo-hearth {
+    display: block; 
+    font-size: 2em; 
+    letter-spacing: 0.05em; 
+}
+
+.letra-grande {
+    font-size: 1.25em; 
+}
+
+a {
+    text-decoration: none;
+    /* color: inherit; */
+}

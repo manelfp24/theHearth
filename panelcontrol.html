@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //OBTENER BOTONES
+        const botonesMenu = document.getElementsByClassName("menu-btn");
+
+        //OBTENER SECCIONES
+        const secciones = document.querySelectorAll(".content-section");
+
+        botonesMenu.forEach((boton) => {
+            boton.addEventListener("click", () => {
+                const target = boton.getAtreibute("data-target");
+                setActiveSection(target);
+            })
+        });
+
+        function setActiveSection(){
+            secciones.forEach((seccion) => {
+                seccion.classList.remove("active-session");
+            })
+
+        document.getElementById(target).classList.add("active-section");
+
+        }
+
+
+        //CLASE PARA GESTIONAR USUARIOS JS
+
+        const arrayUsuarios = [];
+            const usuarios = fetch('https://api.example.com/data')
+                .then(response => response.json());
+            usuarios.forEach( usuario => {
+                const nuevoUsuario = new User(usuario.name, usuario.rol);
+                arrayUsuarios.push(nuevoUsuario);
+            })
+
+
+        class User{
+            constructor(name, role){
+                this.name = name;
+                this.role = role;
+            }
+            getInfo(){
+                return `Nombre: ${this.name}, Rol: ${this.role}`;
+            }
+        }
+    </script>
+</body>
+</html>
